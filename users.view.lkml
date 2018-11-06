@@ -82,8 +82,14 @@ view: users {
     sql: ${TABLE}.zip ;;
   }
 
+
   measure: count {
     type: count
     drill_fields: [id, last_name, first_name]
+  }
+
+  dimension: random_value_between_0_and_1 {
+    type: number
+    sql: CAST(RANDOM()*100 AS int) ;;
   }
 }
