@@ -13,3 +13,8 @@ explore: order_items {
     sql_on: ${users.id} = ${build_stratified_user_sample.id} ;;
   }
 }
+
+datagroup: foo {
+  sql_trigger:  select current_date ;;
+  max_cache_age: "24 hours"
+}

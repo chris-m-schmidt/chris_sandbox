@@ -7,11 +7,17 @@ view: order_items {
     sql: ${TABLE}.id ;;
   }
 
+  dimension: rank {
+    type: number
+    sql: SELECT ROW_NUMBER() OVER() FROM ${TABLE} ;;
+  }
+
   dimension_group: created {
     type: time
     timeframes: [
       raw,
       time,
+      hour,
       date,
       week,
       month,
@@ -92,4 +98,15 @@ view: order_items {
     type: count
     drill_fields: [id]
   }
+
+  measure: count_greater_than_10 {
+    type: yesno
+    sql: ${count} > 10 ;;
+  }
+
+  measure: total_sales {
+    type: sum
+    sql: ${sale_price} ;;
+  }
+
 }
