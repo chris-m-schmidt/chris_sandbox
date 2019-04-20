@@ -1,8 +1,9 @@
 view: providers {
   derived_table: {
-    datagroup_trigger: default_datagroup
-    distribution_style: all
-    sortkeys: ["id"]
+    #disabling PDT due to failing regenerator queries (km 4/20)
+#     datagroup_trigger: default_datagroup
+#     distribution_style: all
+#     sortkeys: ["id"]
     sql:
         WITH entity AS (SELECT * FROM directory.entity)
 

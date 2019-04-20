@@ -1,8 +1,9 @@
 view: daily_call_summary {
   derived_table: {
-    datagroup_trigger: default_datagroup
-    distribution_style: even
-    sortkeys: ["call_date", "entity_id"]
+    #disabling PDT due to failing regenerator queries (km 4/20)
+#     datagroup_trigger: default_datagroup
+#     distribution_style: even
+#     sortkeys: ["call_date", "entity_id"]
     sql:
         WITH daily_calls AS (
                             SELECT
