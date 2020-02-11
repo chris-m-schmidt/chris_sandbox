@@ -87,6 +87,7 @@ view: order_items {
   dimension: status {
     type: string
     sql: ${TABLE}.status ;;
+    html: <p style = "font-family: courier; font-size: 200%">{{rendered_value}}</p> ;;
   }
 
   dimension: user_id {
