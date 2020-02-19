@@ -3,6 +3,7 @@ view: order_items {
 
   dimension: id {
     primary_key: yes
+    group_label: "ID Dimensions"
     type: number
     sql: ${TABLE}.id ;;
   }
@@ -13,6 +14,7 @@ view: order_items {
   }
 
   dimension_group: created {
+    view_label: "Example: Date Groups 1"
     type: time
     timeframes: [
       raw,
@@ -28,6 +30,7 @@ view: order_items {
   }
 
   dimension_group: delivered {
+    view_label: "Example: Date Groups 1"
     type: time
     timeframes: [
       raw,
@@ -42,16 +45,19 @@ view: order_items {
   }
 
   dimension: inventory_item_id {
+    group_label: "ID Dimensions"
     type: number
     sql: ${TABLE}.inventory_item_id ;;
   }
 
   dimension: order_id {
+    group_label: "ID Dimensions"
     type: number
     sql: ${TABLE}.order_id ;;
   }
 
   dimension_group: returned {
+    view_label: "Example: Date Groups 2"
     type: time
     timeframes: [
       raw,
@@ -71,6 +77,7 @@ view: order_items {
   }
 
   dimension_group: shipped {
+    view_label: "Example: Date Groups 2"
     type: time
     timeframes: [
       raw,
@@ -91,6 +98,7 @@ view: order_items {
   }
 
   dimension: user_id {
+    group_label: "ID Dimensions"
     type: number
     sql: ${TABLE}.user_id ;;
   }
