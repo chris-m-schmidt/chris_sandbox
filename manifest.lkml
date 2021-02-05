@@ -7,13 +7,6 @@ project_name: "chris_sandbox"
 #   project: "name_of_other_project"
 # }
 
-visualization: {
-  label: "Custom Table Report"
-  id: "custom_table_report"
-  file: "report_table.js"
-}
-
-
 constant: selected_button_style {
   value: "color: white;
           background-color: #FFCD00;
