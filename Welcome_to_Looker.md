@@ -20,7 +20,7 @@
 </div>
 
 
-<h3>Internal Verizon Resources</h3>
+<h3>Internal Stanford Resources</h3>
 <ul style="vertical-align: middle;line-height:1.5;">
 <li><a href="#"><img src="https://image.flaticon.com/icons/svg/732/732245.svg" height="50"></a>&nbsp;&nbsp;&nbsp;<b>Ask Looker Questions on Slack</b>
 <li><a href="#"><img src="https://seeklogo.com/images/G/gitlab-logo-757620E430-seeklogo.com.png" height="50"></a>&nbsp;&nbsp;&nbsp;<b>Looker GitLab Project</b>

@@ -38,6 +38,7 @@ view: users {
   }
 
   dimension: email {
+    label: "{% if _user_attributes['see_mail'] == 'yes' %}Email{% endif %}"
     type: string
     sql: ${TABLE}.email ;;
   }
